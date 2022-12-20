@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif ;
+            margin: 0 ;
+            background-color: dimgray;
+        }
+        header {
+            height: 100px;
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+
+        }
+        nav {
+            padding: 3px;
+            background-color: rgb(102, 102, 102);
+            box-shadow:2px 3px 5px 0px rgba(0, 0, 0, 0.459) ;
+        }
+        nav > a {
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 30px;
+            color: white;
+
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            margin:10px;
+            padding: 10px;
+            border-radius: 10px 0;
+            box-shadow:  2px 3px 5px 0 rgb(0, 0, 0, 0.459);
+        }
+        article {
+            background-color: lightgrey;
+        }
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding:4px;
+            margin: 0;
+        }
+        footer > p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quos quasi assumenda non ipsa soluta deleniti aperiam, illo similique eos laborum perspiciatis, commodi velit ut tempora minus dolor magnam consequatur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis error excepturi porro, earum vel libero. Ea, delectus quaerat quae, ab blanditiis autem minus rerum facilis magnam dolor nostrum non consectetur.</p>
+                <aside>
+                    <p>Artigo escrito por josé da silva</p>
+                </aside>
+            </article>
+            <article >
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Vinicius Lavoura</p>
+    </footer>
+</body>
+</html>
