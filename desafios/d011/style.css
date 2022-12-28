@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightskyblue url(images/espaco.jpg) center center fixed;
+    background-size: cover;
+}
+
+div {
+    position: absolute;
+    background-color: transparent;
+    width: 350px;
+    height: 350px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#astronauta {
+    background: url(images/astronauta.png) no-repeat center center fixed;
+    background-size: 350px;
+}
