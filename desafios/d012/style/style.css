@@ -44,6 +44,9 @@ section {
     font-family: var(--font-escrita);
     font-size: 1.3em;
 }
+section > p {
+    padding-bottom: 2em;
+}
 section#fundo1 {
     background:#5f9ea07e url(../imagens/background001.jpg) center center no-repeat fixed  ;
     background-size: cover;
