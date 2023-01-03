@@ -17,9 +17,7 @@
 }
 
 body {
-    background: url(../imagens/background001.jpg)
-    center center fixed;
-    background-size: cover;
+    background-color: transparent;
 }
 
 header {
@@ -29,47 +27,42 @@ header {
 }
 header > h1 {
     color: var(--color2);
-    font: normal bold 2.5em var(--font-tittle);
+    font: normal bolder 3.5em var(--font-tittle);
+    font-variant: small-caps;
     padding-bottom: 10px;
 }
 header p {
     color: white;
     font: normal normal 1em var(--font-padrao);
 }
-header > p > a {
-    color: white;
-    font: normal bold 1.4em var(--font-tittle);
-    text-decoration: none;
-}
-
-main {
-    background-color: transparent;
-    min-width: 350px;
-    max-width: 1000px;
-
-}
-
-article {
-    background-color: white;
-    padding: 20px 0 50px 15px;
-    box-shadow: -4px 2px 11px 7px rgba(0, 0, 0, 0.486) ;
-}
-article > p {
-    font: normal normal 1.3em var(--font-escrita);
-    text-align: left;
-}
 
 section {
-    background-color: var(--color3);
-    width: 300px;
-    height: 250px;
-    margin: 20px;
-    padding: 15px;
-    border-radius: 8px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--font-escrita);
+    font-size: 1.3em;
 }
-section > p {
-    color:var(--color2);
-    font: normal normal 1.2em var(--font-escrita);
+section#fundo1 {
+    background:#5f9ea07e url(../imagens/background001.jpg) center center no-repeat fixed  ;
+    background-size: cover;
+}
+section#fundo2 {
+    background: #5f9ea07e url(../imagens/background002.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+section.normal {
+    background-color: var(--color2);
+}
+section.imagem {
+    background-color: transparent;
+    color: white;
+}
+section.imagem > p {
+    display: inline-block;
+    background-color: #00000056;
+    padding: 10px;
 }
 
 footer {
@@ -81,14 +74,12 @@ footer > p {
     color: white;
     font: normal normal 1em var(--font-padrao);
 }
-footer > p > a {
+
+a {
     color: white;
-    font: normal bold 1em var(--font-tittle);
+    font: normal bolder 1em var(--font-padrao);
     text-decoration: none;
 }
-
 a:hover {
-    background-image: linear-gradient(to bottom, #5e5e5e6b, #5e5e5e63);
-    padding: 5px 4px 5px 4px;
-    border-radius: 8px;
+    text-decoration: underline;
 }
