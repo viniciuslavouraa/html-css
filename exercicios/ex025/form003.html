@@ -34,6 +34,12 @@
             <input type="reset" value="Limpar">
         </div>
     </form>
-
+    <script>
+        let date = new Date()
+        let hora = date.getHours()
+        let min = date.getMinutes()
+        let horarioAtual = hora + ":" + min
+        document.querySelector('#horario').value = horarioAtual
+    </script>
 </body>
 </html>
